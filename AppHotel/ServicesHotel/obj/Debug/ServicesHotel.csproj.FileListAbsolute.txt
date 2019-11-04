@@ -1,0 +1,12 @@
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.csprojAssemblyReference.cache
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.csproj.CoreCompileInputs.cache
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.dll.config
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.xml
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.csproj.CopyComplete
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.pdb
