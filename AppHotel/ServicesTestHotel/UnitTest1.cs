@@ -17,5 +17,21 @@ namespace ServicesTestHotel
             customer.DocumentNumber = "76483923";
             proxy.CreateCustomer(customer);
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            ServiceCustomer.ServiceCustomerClient proxy = new ServiceCustomer.ServiceCustomerClient();
+
+            var lista = proxy.ListCustomer();
+        }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            ServiceCustomer.ServiceCustomerClient proxy = new ServiceCustomer.ServiceCustomerClient();
+            
+            proxy.DeleteCustomer(3);
+        }
     }
 }

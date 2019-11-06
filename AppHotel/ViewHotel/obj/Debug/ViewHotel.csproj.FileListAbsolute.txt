@@ -1,0 +1,11 @@
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe.config
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csprojAssemblyReference.cache
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Form1.resources
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Properties.Resources.resources
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.ViewHotel.resources
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.GenerateResource.cache
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.CoreCompileInputs.cache
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.exe
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.pdb

@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesTestHotel", "Servic
 		{254503AA-8A59-4464-9FD4-F23785102718} = {254503AA-8A59-4464-9FD4-F23785102718}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewHotel", "ViewHotel\ViewHotel.csproj", "{AC66037C-D31F-4086-B56F-4784B3202E7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{376DD612-F861-4EC9-ABB0-6D24EE992389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376DD612-F861-4EC9-ABB0-6D24EE992389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376DD612-F861-4EC9-ABB0-6D24EE992389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC66037C-D31F-4086-B56F-4784B3202E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC66037C-D31F-4086-B56F-4784B3202E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC66037C-D31F-4086-B56F-4784B3202E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC66037C-D31F-4086-B56F-4784B3202E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
