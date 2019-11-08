@@ -12,20 +12,19 @@ namespace ServicesHotel
     using System;
     using System.Collections.Generic;
     
-    public partial class Customer
+    public partial class Hotel
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Customer()
+        public Hotel()
         {
             this.Reservation = new HashSet<Reservation>();
         }
     
         public int id { get; set; }
         public string Name { get; set; }
-        public string SurName { get; set; }
-        public string DocumentType { get; set; }
-        public int DocumentNumber { get; set; }
-        public int Phone { get; set; }
+        public int phone { get; set; }
+        public int QuantityRoom { get; set; }
+        public string Direction { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reservation> Reservation { get; set; }

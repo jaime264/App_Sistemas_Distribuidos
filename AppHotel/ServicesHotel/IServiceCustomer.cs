@@ -29,7 +29,7 @@ namespace ServicesHotel
         private string name;
         private string surName;
         private string documentType;
-        private string documentNumber;
+        private int documentNumber;
 
         [DataMember]
         public int CustomerId { get => customerId; set => customerId = value; }
@@ -44,6 +44,6 @@ namespace ServicesHotel
         public string DocumentType { get => documentType; set => documentType = value; }
 
         [DataMember]
-        public string DocumentNumber { get => documentNumber; set => documentNumber = value; }
+        public int DocumentNumber { get => documentNumber; set => documentNumber = value; }
     }
 }

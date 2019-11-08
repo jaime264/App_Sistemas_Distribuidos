@@ -14,7 +14,7 @@ namespace ServicesTestHotel
             customer.Name = "Rodrigo";
             customer.SurName = "Gomez";
             customer.DocumentType = "DNI";
-            customer.DocumentNumber = "76483923";
+            customer.DocumentNumber = 76483923;
             proxy.CreateCustomer(customer);
         }
 

@@ -37,7 +37,7 @@ namespace ServicesHotel
             {
                 HotelEntities hotel = new HotelEntities();
 
-                var remove = (from c in hotel.Customer where c.ClienteId == customerId select c).First();
+                var remove = (from c in hotel.Customer where c.id == customerId select c).First();
 
                 if(remove != null)
                 {

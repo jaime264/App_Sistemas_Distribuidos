@@ -55,7 +55,11 @@
     <Compile Include="Customer.cs">
       <DependentUpon>ModelHotel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Hotel.cs">
+      <DependentUpon>ModelHotel.tt</DependentUpon>
+    </Compile>
     <Compile Include="IServiceCustomer.cs" />
+    <Compile Include="IServiceReservation.cs" />
     <Compile Include="ModelHotel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -72,7 +76,14 @@
       <DependentUpon>ModelHotel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs">
+      <DependentUpon>ModelHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs">
+      <DependentUpon>ModelHotel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ServiceCustomer.cs" />
+    <Compile Include="ServiceReservation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -86,19 +97,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ModelHotel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelHotel.Context.cs</LastGenOutput>
       <DependentUpon>ModelHotel.edmx</DependentUpon>
+      <LastGenOutput>ModelHotel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ModelHotel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelHotel.edmx</DependentUpon>
       <LastGenOutput>ModelHotel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

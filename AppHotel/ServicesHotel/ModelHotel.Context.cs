@@ -26,5 +26,8 @@ namespace ServicesHotel
         }
     
         public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<Hotel> Hotel { get; set; }
+        public virtual DbSet<Reservation> Reservation { get; set; }
+        public virtual DbSet<Room> Room { get; set; }
     }
 }
