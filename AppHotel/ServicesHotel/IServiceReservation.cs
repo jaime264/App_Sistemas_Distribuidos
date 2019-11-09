@@ -29,19 +29,69 @@ namespace ServicesHotel
         private int roomId;
         private int hotelId;
 
-        [DataMember]
-        public DateTime AdmissionDate { get => admissionDate; set => admissionDate = value; }
+        public DateTime AdmissionDate
+        {
+            get
+            {
+                return admissionDate;
+            }
 
-        [DataMember]
-        public DateTime DepartureDate { get => departureDate; set => departureDate = value; }
+            set
+            {
+                admissionDate = value;
+            }
+        }
 
-        [DataMember]
-        public int CustomerId { get => customerId; set => customerId = value; }
+        public DateTime DepartureDate
+        {
+            get
+            {
+                return departureDate;
+            }
 
-        [DataMember]
-        public int RoomId { get => roomId; set => roomId = value; }
+            set
+            {
+                departureDate = value;
+            }
+        }
 
-        [DataMember]
-        public int HotelId { get => hotelId; set => hotelId = value; }
+        public int CustomerId
+        {
+            get
+            {
+                return customerId;
+            }
+
+            set
+            {
+                customerId = value;
+            }
+        }
+
+        public int RoomId
+        {
+            get
+            {
+                return roomId;
+            }
+
+            set
+            {
+                roomId = value;
+            }
+        }
+
+        public int HotelId
+        {
+            get
+            {
+                return hotelId;
+            }
+
+            set
+            {
+                hotelId = value;
+            }
+        }
     }
 }

@@ -32,18 +32,69 @@ namespace ServicesHotel
         private int documentNumber;
 
         [DataMember]
-        public int CustomerId { get => customerId; set => customerId = value; }
+        public int CustomerId
+        {
+            get
+            {
+                return customerId;
+            }
 
+            set
+            {
+                customerId = value;
+            }
+        }
         [DataMember]
-        public string Name { get => name; set => name = value; }
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
 
+            set
+            {
+                name = value;
+            }
+        }
         [DataMember]
-        public string SurName { get => surName; set => surName = value; }
+        public string SurName
+        {
+            get
+            {
+                return surName;
+            }
 
+            set
+            {
+                surName = value;
+            }
+        }
         [DataMember]
-        public string DocumentType { get => documentType; set => documentType = value; }
+        public string DocumentType
+        {
+            get
+            {
+                return documentType;
+            }
 
+            set
+            {
+                documentType = value;
+            }
+        }
         [DataMember]
-        public int DocumentNumber { get => documentNumber; set => documentNumber = value; }
+        public int DocumentNumber
+        {
+            get
+            {
+                return documentNumber;
+            }
+
+            set
+            {
+                documentNumber = value;
+            }
+        }
     }
 }

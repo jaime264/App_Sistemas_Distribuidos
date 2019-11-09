@@ -10,3 +10,13 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.csproj.CopyComplete
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.dll
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.pdb
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.csprojResolveAssemblyReference.cache
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.dll
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.pdb
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.dll.config
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.dll
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.pdb
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.dll
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.xml
+C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.xml
