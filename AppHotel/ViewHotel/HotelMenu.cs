@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ViewHotel
 {
-    public partial class Form1 : Form
+    public partial class FormHotelCase : Form
     {
-        public Form1()
+        public FormHotelCase()
         {
             InitializeComponent();
         }
@@ -22,6 +22,12 @@ namespace ViewHotel
             ViewHotel viewHotel = new ViewHotel();
             viewHotel.MdiParent = this;
             viewHotel.Show();
+        }
+
+        private void crearHotelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewHotel h = new ViewHotel();
+                h.Show();
         }
     }
 }
