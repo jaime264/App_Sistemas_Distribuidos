@@ -30,17 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inisiarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hotelesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearHotelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenerUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reservarHabitacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cancelarReservaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,112 +41,54 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inisiarSesionToolStripMenuItem,
-            this.hotelesToolStripMenuItem,
             this.clienteToolStripMenuItem,
             this.reservasToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(595, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(446, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // inisiarSesionToolStripMenuItem
             // 
-            this.inisiarSesionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loginToolStripMenuItem});
             this.inisiarSesionToolStripMenuItem.Name = "inisiarSesionToolStripMenuItem";
-            this.inisiarSesionToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.inisiarSesionToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.inisiarSesionToolStripMenuItem.Text = "Inisiar Sesion";
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.loginToolStripMenuItem.Text = "Login";
-            // 
-            // hotelesToolStripMenuItem
-            // 
-            this.hotelesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearHotelToolStripMenuItem});
-            this.hotelesToolStripMenuItem.Name = "hotelesToolStripMenuItem";
-            this.hotelesToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
-            this.hotelesToolStripMenuItem.Text = "Hoteles";
-            // 
-            // crearHotelToolStripMenuItem
-            // 
-            this.crearHotelToolStripMenuItem.Name = "crearHotelToolStripMenuItem";
-            this.crearHotelToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.crearHotelToolStripMenuItem.Text = "Crear Hotel";
-            this.crearHotelToolStripMenuItem.Click += new System.EventHandler(this.crearHotelToolStripMenuItem_Click);
+            this.inisiarSesionToolStripMenuItem.Click += new System.EventHandler(this.inisiarSesionToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
-            this.clienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearUsuarioToolStripMenuItem,
-            this.mantenerUsuarioToolStripMenuItem});
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            // 
-            // crearUsuarioToolStripMenuItem
-            // 
-            this.crearUsuarioToolStripMenuItem.Name = "crearUsuarioToolStripMenuItem";
-            this.crearUsuarioToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.crearUsuarioToolStripMenuItem.Text = "Crear Usuario";
-            // 
-            // mantenerUsuarioToolStripMenuItem
-            // 
-            this.mantenerUsuarioToolStripMenuItem.Name = "mantenerUsuarioToolStripMenuItem";
-            this.mantenerUsuarioToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.mantenerUsuarioToolStripMenuItem.Text = "Mantener Usuario";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.clienteToolStripMenuItem.Text = "Clientes";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // reservasToolStripMenuItem
             // 
-            this.reservasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reservarHabitacionToolStripMenuItem,
-            this.cancelarReservaToolStripMenuItem});
             this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
-            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.reservasToolStripMenuItem.Text = "Reservas";
-            // 
-            // reservarHabitacionToolStripMenuItem
-            // 
-            this.reservarHabitacionToolStripMenuItem.Name = "reservarHabitacionToolStripMenuItem";
-            this.reservarHabitacionToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
-            this.reservarHabitacionToolStripMenuItem.Text = "Reservar Habitacion";
-            // 
-            // cancelarReservaToolStripMenuItem
-            // 
-            this.cancelarReservaToolStripMenuItem.Name = "cancelarReservaToolStripMenuItem";
-            this.cancelarReservaToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
-            this.cancelarReservaToolStripMenuItem.Text = "Cancelar Reserva";
+            this.reservasToolStripMenuItem.Click += new System.EventHandler(this.reservasToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem1});
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.salirToolStripMenuItem1.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // FormHotelCase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 350);
+            this.ClientSize = new System.Drawing.Size(446, 284);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormHotelCase";
-            this.Text = "HotelCaseManagement";
+            this.Text = "Hotel";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -168,17 +102,9 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem inisiarSesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hotelesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem crearHotelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem crearUsuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mantenerUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reservarHabitacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cancelarReservaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
     }
 }
 

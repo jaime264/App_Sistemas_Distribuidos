@@ -19,15 +19,33 @@ namespace ViewHotel
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ViewHotel viewHotel = new ViewHotel();
-            viewHotel.MdiParent = this;
-            viewHotel.Show();
+            
         }
 
-        private void crearHotelToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewHotel h = new ViewHotel();
-                h.Show();
+            RegisterCustomer registerCustomer = new RegisterCustomer();
+            registerCustomer.MdiParent = this;
+            registerCustomer.Show();
+        }
+
+        private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reservation reservation = new Reservation();
+            reservation.MdiParent = this;
+            reservation.Show();
+        }
+
+        private void inisiarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.MdiParent = this;
+            login.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
