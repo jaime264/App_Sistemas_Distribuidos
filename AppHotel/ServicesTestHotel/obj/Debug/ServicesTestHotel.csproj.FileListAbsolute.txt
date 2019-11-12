@@ -16,3 +16,6 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesT
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.csproj.CopyComplete
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.dll
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.pdb
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.csprojResolveAssemblyReference.cache
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.dll
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.pdb

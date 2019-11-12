@@ -21,8 +21,8 @@ namespace ServicesHotel
         public int RoomId { get; set; }
         public int HotelId { get; set; }
     
-        public virtual Customer Customer { get; set; }
-        public virtual Hotel Hotel { get; set; }
-        public virtual Room Room { get; set; }
+        public Customer Customer { get; set; }
+        public Hotel Hotel { get; set; }
+        public Room Room { get; set; }
     }
 }
