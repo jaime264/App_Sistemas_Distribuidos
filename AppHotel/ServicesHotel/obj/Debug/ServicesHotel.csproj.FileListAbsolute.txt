@@ -20,3 +20,13 @@ C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\Ap
 C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.xml
 C:\Users\jason.alfonso\Desktop\SistemasDistribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.dll.config
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.dll
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\ServicesHotel.pdb
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.dll
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.xml
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.csprojResolveAssemblyReference.cache
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.dll
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesHotel\obj\Debug\ServicesHotel.pdb
