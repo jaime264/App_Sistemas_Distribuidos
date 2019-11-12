@@ -28,6 +28,6 @@ namespace ServicesHotel
         public int Phone { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Reservation> Reservation { get; set; }
+        public ICollection<Reservation> Reservation { get; set; }
     }
 }

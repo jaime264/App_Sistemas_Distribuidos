@@ -11,3 +11,15 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.FormHot
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.RegisterCustomer.resources
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Reservation.resources
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Login.resources
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe.config
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.pdb
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csprojResolveAssemblyReference.cache
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.FormHotelCase.resources
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Login.resources
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Properties.Resources.resources
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.RegisterCustomer.resources
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Reservation.resources
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.GenerateResource.Cache
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.exe
+C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.pdb
