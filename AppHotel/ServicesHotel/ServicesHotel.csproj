@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="ServiceCustomer.cs" />
     <Compile Include="ServiceReservation.cs" />
+    <Compile Include="util\Confirm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

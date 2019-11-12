@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServicesHotel.util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -10,8 +11,10 @@ namespace ServicesHotel
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "ServiceCustomer" en el código y en el archivo de configuración a la vez.
     public class ServiceCustomer : IServiceCustomer
     {
-        public void CreateCustomer(CustomerBE customerBE)
+        public Confirm CreateCustomer(CustomerBE customerBE)
         {
+            Confirm confirm = new Confirm();
+
             try
             {
                 HotelEntities hotel = new HotelEntities();
@@ -24,11 +27,19 @@ namespace ServicesHotel
 
                 hotel.Customer.Add(customer);
                 hotel.SaveChanges();
+
+                confirm.Clase = "CreateCustomer";
+                confirm.Status = "OK";
             }
             catch(Exception e)
             {
-                throw new Exception(e.Message);
+                confirm.Clase = "CreateCustomer";
+                confirm.Status = "ERROR";
+                //throw new Exception(e.Message);
             }
+            return confirm;
+
+
         }
 
         public void DeleteCustomer(int customerId)

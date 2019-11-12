@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServicesHotel.util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -15,7 +16,7 @@ namespace ServicesHotel
         List<Customer> ListCustomer();
 
         [OperationContract]
-        void CreateCustomer(CustomerBE customerBE);
+        Confirm CreateCustomer(CustomerBE customerBE);
 
         [OperationContract]
         void DeleteCustomer(int customerId);
