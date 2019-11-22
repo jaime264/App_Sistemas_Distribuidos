@@ -34,7 +34,7 @@ namespace ServicesHotel
             catch(Exception e)
             {
                 confirm.Clase = "CreateCustomer";
-                confirm.Status = "ERROR";
+                confirm.Status = e.Message;
                 //throw new Exception(e.Message);
             }
             return confirm;

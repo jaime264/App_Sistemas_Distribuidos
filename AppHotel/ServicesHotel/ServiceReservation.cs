@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServicesHotel.util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -10,8 +11,9 @@ namespace ServicesHotel
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "ServiceReservation" en el código y en el archivo de configuración a la vez.
     public class ServiceReservation : IServiceReservation
     {
-        public void CreateReservation(ReservationBE reservationBE)
+        public Confirm CreateReservation(ReservationBE reservationBE)
         {
+            Confirm confirm = new Confirm();
             try
             {
                 HotelEntities hotel = new HotelEntities();
@@ -26,14 +28,23 @@ namespace ServicesHotel
                 hotel.Reservation.Add(reservation);
                 hotel.SaveChanges();
 
-            }catch(Exception e)
-            {
-                throw new Exception(e.Message);
+                confirm.Clase = "CreateReservation";
+                confirm.Status = "OK";
+
             }
+            catch(Exception e)
+            {
+                confirm.Clase = "CreateReservation";
+                confirm.Status = e.Message;
+                //throw new Exception(e.Message);
+            }
+
+            return confirm;
         }
 
-        public void DeleteReservation(int reservationId)
+        public Confirm DeleteReservation(int reservationId)
         {
+            Confirm confirm = new Confirm();
             try
             {
                 HotelEntities hotel = new HotelEntities();
@@ -45,11 +56,18 @@ namespace ServicesHotel
                     hotel.Reservation.Remove(remove);
                     hotel.SaveChanges();
                 }
+
+                confirm.Clase = "DeleteReservation";
+                confirm.Status = "OK";
             }
             catch(Exception e)
             {
-                throw new Exception(e.Message);
+                confirm.Clase = "DeleteReservation";
+                confirm.Status = e.Message;
+                //throw new Exception(e.Message);
             }
+
+            return confirm;
         }
 
         public List<Reservation> ListReservation()
@@ -64,8 +82,38 @@ namespace ServicesHotel
             }
             catch (Exception e)
             {
+                throw new Exception("Error en ListReservation: " + e.Message);
+            }
+        }
+
+        public Confirm UpdateReservation(ReservationBE reservationBE, int reservationId)
+        {
+            Confirm confirm = new Confirm();
+
+            try
+            {
+                HotelEntities hotel = new HotelEntities();
+
+                var query = (from r in hotel.Reservation where r.id == reservationId select r).FirstOrDefault();
+                query.CustomerId = reservationBE.CustomerId;
+                query.HotelId = reservationBE.HotelId;
+                query.RoomId = reservationBE.RoomId;
+                query.AdmissionDate = reservationBE.AdmissionDate;
+                query.DepartureDate = reservationBE.DepartureDate;
+
+                hotel.SaveChanges();
+
+                confirm.Clase = "UpdateReservation";
+                confirm.Status = "OK";
+            }
+            catch (Exception e)
+            {
+                confirm.Clase = "UpdateReservation";
+                confirm.Status = e.Message;
                 throw new Exception(e.Message);
             }
+
+            return confirm;
         }
     }
 }

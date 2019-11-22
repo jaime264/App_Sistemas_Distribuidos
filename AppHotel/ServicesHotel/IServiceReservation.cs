@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServicesHotel.util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -12,15 +13,19 @@ namespace ServicesHotel
     public interface IServiceReservation
     {
         [OperationContract]
+        Confirm UpdateReservation(ReservationBE reservationBE, int reservationId);
+
+        [OperationContract]
         List<Reservation> ListReservation();
 
         [OperationContract]
-        void CreateReservation(ReservationBE reservationBE);
+        Confirm CreateReservation(ReservationBE reservationBE);
 
         [OperationContract]
-        void DeleteReservation(int reservationId);
+        Confirm DeleteReservation(int reservationId);
     }
 
+    [Serializable]
     public class ReservationBE
     {
         private DateTime admissionDate;
@@ -29,6 +34,7 @@ namespace ServicesHotel
         private int roomId;
         private int hotelId;
 
+        [DataMember]
         public DateTime AdmissionDate
         {
             get
@@ -42,6 +48,7 @@ namespace ServicesHotel
             }
         }
 
+        [DataMember]
         public DateTime DepartureDate
         {
             get
@@ -55,6 +62,7 @@ namespace ServicesHotel
             }
         }
 
+        [DataMember]
         public int CustomerId
         {
             get
@@ -68,6 +76,7 @@ namespace ServicesHotel
             }
         }
 
+        [DataMember]
         public int RoomId
         {
             get
@@ -81,6 +90,7 @@ namespace ServicesHotel
             }
         }
 
+        [DataMember]
         public int HotelId
         {
             get
