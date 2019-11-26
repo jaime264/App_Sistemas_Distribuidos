@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="uQcb7KKSFBK7xxsg7Dj7Jqbcy+Y=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="PrqF+UNKKsSwq4FXeVZBHaPn9JE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServiceReservation">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServiceReservation" contract="ServiceReservation.IServiceReservation" bindingType="basicHttpBinding" address="http://localhost:8733/Design_Time_Addresses/ServicesHotel/ServiceReservation/" bindingConfiguration="BasicHttpBinding_IServiceReservation">
+    <endpoint name="BasicHttpBinding_IServiceReservation" contract="ServiceReservation.IServiceReservation" bindingType="basicHttpBinding" address="http://localhost:59838/ServiceReservation.svc" bindingConfiguration="BasicHttpBinding_IServiceReservation">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8733/Design_Time_Addresses/ServicesHotel/ServiceReservation/</serializedValue>
+          <serializedValue>http://localhost:59838/ServiceReservation.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

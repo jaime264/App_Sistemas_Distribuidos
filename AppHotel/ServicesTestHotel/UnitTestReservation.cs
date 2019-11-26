@@ -33,7 +33,7 @@ namespace ServicesTestHotel
         public void TestMethod2()
         {
             ServiceReservation.ServiceReservationClient proxy = new ServiceReservation.ServiceReservationClient();
-            var value = proxy.DeleteReservation(4);
+            var value = proxy.DeleteReservation(7);
             Assert.AreEqual(value.Status, "OK");
         }
 

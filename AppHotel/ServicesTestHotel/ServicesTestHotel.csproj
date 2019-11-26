@@ -62,44 +62,75 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServiceRoom\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTestReservation.cs" />
+    <Compile Include="UnitTestRoom.cs" />
     <Compile Include="util\Confirm.cs" />
     <Compile Include="util\Customer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\ServiceCustomer\service.wsdl" />
-    <None Include="Connected Services\ServiceCustomer\service.xsd">
+    <None Include="Connected Services\ServiceCustomer\ServiceCustomer.wsdl" />
+    <None Include="Connected Services\ServiceCustomer\ServiceCustomer.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceCustomer\service1.xsd">
+    <None Include="Connected Services\ServiceCustomer\ServiceCustomer1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceCustomer\ServicesHotel.xsd">
+    <None Include="Connected Services\ServiceCustomer\ServiceCustomer2.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceCustomer\ServiceCustomer3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceCustomer\ServicesTestHotel.ServiceCustomer.Confirm.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceCustomer\ServicesTestHotel.ServiceCustomer.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReservation\service.wsdl" />
-    <None Include="Connected Services\ServiceReservation\service.xsd">
+    <None Include="Connected Services\ServiceReservation\ServiceReservation.wsdl" />
+    <None Include="Connected Services\ServiceReservation\ServiceReservation.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReservation\service1.xsd">
+    <None Include="Connected Services\ServiceReservation\ServiceReservation1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReservation\ServicesHotel.util.xsd">
+    <None Include="Connected Services\ServiceReservation\ServiceReservation2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReservation\ServicesHotel.xsd">
+    <None Include="Connected Services\ServiceReservation\ServiceReservation3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReservation\ServicesTestHotel.ServiceReservation.Confirm.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReservation\ServicesTestHotel.ServiceReservation.Reservation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceRoom\ServiceRoom.wsdl" />
+    <None Include="Connected Services\ServiceRoom\ServiceRoom.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceRoom\ServiceRoom1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceRoom\ServiceRoom2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceRoom\ServiceRoom3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceRoom\ServicesTestHotel.ServiceRoom.Confirm.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceRoom\ServicesTestHotel.ServiceRoom.Room.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -110,6 +141,25 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceCustomer\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReservation\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceRoom\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceRoom\ServiceRoom.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceRoom\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceRoom\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceRoom\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceCustomer\ServiceCustomer.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceCustomer\configuration91.svcinfo" />
@@ -122,6 +172,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReservation\ServiceReservation.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceReservation\configuration91.svcinfo" />

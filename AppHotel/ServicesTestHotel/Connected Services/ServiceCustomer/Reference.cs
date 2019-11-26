@@ -15,7 +15,7 @@ namespace ServicesTestHotel.ServiceCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://schemas.datacontract.org/2004/07/ServicesHotel")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
     [System.SerializableAttribute()]
     public partial class Customer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -156,7 +156,7 @@ namespace ServicesTestHotel.ServiceCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Reservation", Namespace="http://schemas.datacontract.org/2004/07/ServicesHotel")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Reservation", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
     [System.SerializableAttribute()]
     public partial class Reservation : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -329,7 +329,7 @@ namespace ServicesTestHotel.ServiceCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Hotel", Namespace="http://schemas.datacontract.org/2004/07/ServicesHotel")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Hotel", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
     [System.SerializableAttribute()]
     public partial class Hotel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -454,7 +454,7 @@ namespace ServicesTestHotel.ServiceCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Room", Namespace="http://schemas.datacontract.org/2004/07/ServicesHotel")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Room", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
     [System.SerializableAttribute()]
     public partial class Room : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -563,7 +563,7 @@ namespace ServicesTestHotel.ServiceCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CustomerBE", Namespace="http://schemas.datacontract.org/2004/07/ServicesHotel")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CustomerBE", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
     [System.SerializableAttribute()]
     public partial class CustomerBE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -670,6 +670,67 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Confirm", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel.util")]
+    [System.SerializableAttribute()]
+    public partial class Confirm : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ClaseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StatusField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Clase {
+            get {
+                return this.ClaseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClaseField, value) != true)) {
+                    this.ClaseField = value;
+                    this.RaisePropertyChanged("Clase");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceCustomer.IServiceCustomer")]
     public interface IServiceCustomer {
@@ -681,10 +742,10 @@ namespace ServicesTestHotel.ServiceCustomer {
         System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Customer[]> ListCustomerAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/CreateCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/CreateCustomerResponse")]
-        void CreateCustomer(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE);
+        ServicesTestHotel.ServiceCustomer.Confirm CreateCustomer(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/CreateCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/CreateCustomerResponse")]
-        System.Threading.Tasks.Task CreateCustomerAsync(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE);
+        System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Confirm> CreateCustomerAsync(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/DeleteCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/DeleteCustomerResponse")]
         void DeleteCustomer(int customerId);
@@ -728,11 +789,11 @@ namespace ServicesTestHotel.ServiceCustomer {
             return base.Channel.ListCustomerAsync();
         }
         
-        public void CreateCustomer(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE) {
-            base.Channel.CreateCustomer(customerBE);
+        public ServicesTestHotel.ServiceCustomer.Confirm CreateCustomer(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE) {
+            return base.Channel.CreateCustomer(customerBE);
         }
         
-        public System.Threading.Tasks.Task CreateCustomerAsync(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE) {
+        public System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Confirm> CreateCustomerAsync(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE) {
             return base.Channel.CreateCustomerAsync(customerBE);
         }
         
