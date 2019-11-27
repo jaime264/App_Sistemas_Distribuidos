@@ -22,8 +22,8 @@ namespace ServiceHotel
         Confirm Create(Room room);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
-        Confirm Update(int idRoom,string TypeRoom, string NumberRoom, double Price);
+        [WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json)]
+        Confirm Update(Room room);
 
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
@@ -31,7 +31,7 @@ namespace ServiceHotel
 
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
-        List<Room> find(string type);
+        List<Room> Find(string type);
     }
 
     [DataContract]

@@ -52,12 +52,12 @@ namespace ServiceHotel
             {
                 confirm.Status = e.Message;
                 confirm.Clase = "DeleteRoom";
-                throw new Exception(e.Message);
+                //throw new Exception(e.Message);
             }
             return confirm;
         }
 
-        public List<Room> find(string type)
+        public List<Room> Find(string type)
         {
             try
             {
@@ -88,16 +88,16 @@ namespace ServiceHotel
             }
         }
 
-        public Confirm Update(int idRoom, string TypeRoom, string NumberRoom, double Price)
+        public Confirm Update(Room room)
         {
             Confirm confirm = new Confirm();
             try
             {
                 HotelEntities hotel = new HotelEntities();
-                var query = (from r in hotel.Room where r.id == idRoom select r).FirstOrDefault();
-                query.NumberRoom = NumberRoom;
-                query.Price = Price;
-                query.TypeRoom = TypeRoom;
+                var query = (from r in hotel.Room where r.id == room.id select r).FirstOrDefault();
+                query.NumberRoom = room.NumberRoom;
+                query.Price = room.Price;
+                query.TypeRoom = room.TypeRoom;
                 hotel.SaveChanges();
 
                 confirm.Status = "OK";

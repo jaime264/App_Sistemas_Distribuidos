@@ -19,3 +19,10 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesT
 C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.csprojResolveAssemblyReference.cache
 C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.dll
 C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\obj\Debug\ServicesTestHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\System.Net.Http.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\Newtonsoft.Json.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServicesTestHotel\bin\Debug\Newtonsoft.Json.xml
