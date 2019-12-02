@@ -19,6 +19,9 @@ namespace ServiceHotel
         Confirm CreateCustomer(CustomerBE customerBE);
 
         [OperationContract]
+        Confirm UpdateCustomer(Customer customer);
+
+        [OperationContract]
         void DeleteCustomer(int customerId);
     }
 
@@ -26,76 +29,23 @@ namespace ServiceHotel
     [Serializable]
     public class CustomerBE
     {
-        private int customerId;
-        private string name;
-        private string surName;
-        private string documentType;
-        private int documentNumber;
+        [DataMember]
+        public int CustomerId { get; set; }
 
         [DataMember]
-        public int CustomerId
-        {
-            get
-            {
-                return customerId;
-            }
+        public String Name { get; set; }
 
-            set
-            {
-                customerId = value;
-            }
-        }
         [DataMember]
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
+        public String SurName { get; set; }
 
-            set
-            {
-                name = value;
-            }
-        }
         [DataMember]
-        public string SurName
-        {
-            get
-            {
-                return surName;
-            }
+        public String DocumentType { get; set; }
 
-            set
-            {
-                surName = value;
-            }
-        }
         [DataMember]
-        public string DocumentType
-        {
-            get
-            {
-                return documentType;
-            }
+        public int DocumentNumber { get; set; }
 
-            set
-            {
-                documentType = value;
-            }
-        }
         [DataMember]
-        public int DocumentNumber
-        {
-            get
-            {
-                return documentNumber;
-            }
+        public int Phone { get; set; }
 
-            set
-            {
-                documentNumber = value;
-            }
-        }
     }
 }

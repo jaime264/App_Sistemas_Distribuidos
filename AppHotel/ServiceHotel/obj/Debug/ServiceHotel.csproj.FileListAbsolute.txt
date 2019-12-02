@@ -9,4 +9,3 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServiceHotel\obj\Debug\ServiceHotel.c
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServiceHotel\obj\Debug\ServiceHotel.csproj.CopyComplete
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServiceHotel\obj\Debug\ServiceHotel.dll
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServiceHotel\obj\Debug\ServiceHotel.pdb
-C:\Proy\App_Sistemas_Distribuidos\AppHotel\ServiceHotel\obj\Debug\ServiceHotel.csprojAssemblyReference.cache

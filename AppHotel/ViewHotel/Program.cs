@@ -16,7 +16,7 @@ namespace ViewHotel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHotelCase());
+            Application.Run(new RegisterCustomer());
         }
     }
 }

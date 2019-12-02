@@ -33,23 +33,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.textBoxSurName = new System.Windows.Forms.TextBox();
-            this.textBoxDocumentNumber = new System.Windows.Forms.TextBox();
-            this.comboBoxDocumentType = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSurName = new System.Windows.Forms.TextBox();
+            this.txtDocumentNumber = new System.Windows.Forms.TextBox();
+            this.cbDocumentType = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxCelular = new System.Windows.Forms.TextBox();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgwClientes = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SurName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DocumentType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DocumentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,39 +99,39 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "N° Documento:";
             // 
-            // textBoxName
+            // txtName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(111, 82);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(176, 20);
-            this.textBoxName.TabIndex = 2;
+            this.txtName.Location = new System.Drawing.Point(111, 82);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(176, 20);
+            this.txtName.TabIndex = 2;
             // 
-            // textBoxSurName
+            // txtSurName
             // 
-            this.textBoxSurName.Location = new System.Drawing.Point(111, 115);
-            this.textBoxSurName.Name = "textBoxSurName";
-            this.textBoxSurName.Size = new System.Drawing.Size(176, 20);
-            this.textBoxSurName.TabIndex = 2;
+            this.txtSurName.Location = new System.Drawing.Point(111, 115);
+            this.txtSurName.Name = "txtSurName";
+            this.txtSurName.Size = new System.Drawing.Size(176, 20);
+            this.txtSurName.TabIndex = 2;
             // 
-            // textBoxDocumentNumber
+            // txtDocumentNumber
             // 
-            this.textBoxDocumentNumber.Location = new System.Drawing.Point(111, 179);
-            this.textBoxDocumentNumber.Name = "textBoxDocumentNumber";
-            this.textBoxDocumentNumber.Size = new System.Drawing.Size(176, 20);
-            this.textBoxDocumentNumber.TabIndex = 2;
+            this.txtDocumentNumber.Location = new System.Drawing.Point(111, 179);
+            this.txtDocumentNumber.Name = "txtDocumentNumber";
+            this.txtDocumentNumber.Size = new System.Drawing.Size(176, 20);
+            this.txtDocumentNumber.TabIndex = 2;
             // 
-            // comboBoxDocumentType
+            // cbDocumentType
             // 
-            this.comboBoxDocumentType.FormattingEnabled = true;
-            this.comboBoxDocumentType.Items.AddRange(new object[] {
+            this.cbDocumentType.FormattingEnabled = true;
+            this.cbDocumentType.Items.AddRange(new object[] {
             "DNI",
-            "Pasaporte",
-            "Carnet de Extranjeria"});
-            this.comboBoxDocumentType.Location = new System.Drawing.Point(111, 150);
-            this.comboBoxDocumentType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxDocumentType.Name = "comboBoxDocumentType";
-            this.comboBoxDocumentType.Size = new System.Drawing.Size(176, 21);
-            this.comboBoxDocumentType.TabIndex = 3;
+            "CE",
+            "PASAPORTE"});
+            this.cbDocumentType.Location = new System.Drawing.Point(111, 150);
+            this.cbDocumentType.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDocumentType.Name = "cbDocumentType";
+            this.cbDocumentType.Size = new System.Drawing.Size(176, 21);
+            this.cbDocumentType.TabIndex = 3;
             // 
             // label6
             // 
@@ -141,74 +142,34 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "N° Celular :";
             // 
-            // textBoxCelular
+            // txtMobile
             // 
-            this.textBoxCelular.Location = new System.Drawing.Point(111, 206);
-            this.textBoxCelular.Name = "textBoxCelular";
-            this.textBoxCelular.Size = new System.Drawing.Size(176, 20);
-            this.textBoxCelular.TabIndex = 5;
+            this.txtMobile.Location = new System.Drawing.Point(111, 206);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(176, 20);
+            this.txtMobile.TabIndex = 5;
             // 
-            // buttonSave
+            // btnSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(354, 105);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(88, 103);
-            this.buttonSave.TabIndex = 6;
-            this.buttonSave.Text = "Guardar";
-            this.buttonSave.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(354, 105);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(88, 103);
+            this.btnSave.TabIndex = 6;
+            this.btnSave.Text = "Guardar";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // buttonCancel
+            // btnCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(457, 131);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(76, 56);
-            this.buttonCancel.TabIndex = 7;
-            this.buttonCancel.Text = "Cancelar";
-            this.buttonCancel.UseVisualStyleBackColor = true;
-            this.buttonCancel.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Nombres,
-            this.Apellidos,
-            this.TipoDocumento,
-            this.Celular});
-            this.dataGridView1.Location = new System.Drawing.Point(32, 242);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(547, 196);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nombres
-            // 
-            this.Nombres.HeaderText = "Nombres";
-            this.Nombres.Name = "Nombres";
-            // 
-            // Apellidos
-            // 
-            this.Apellidos.HeaderText = "Apellidos";
-            this.Apellidos.Name = "Apellidos";
-            // 
-            // TipoDocumento
-            // 
-            this.TipoDocumento.HeaderText = "TipoDocumento";
-            this.TipoDocumento.Name = "TipoDocumento";
-            // 
-            // Celular
-            // 
-            this.Celular.HeaderText = "Celular";
-            this.Celular.Name = "Celular";
+            this.btnCancel.Location = new System.Drawing.Point(457, 131);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(76, 56);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -218,6 +179,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Modificar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -227,6 +189,61 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // dgwClientes
+            // 
+            this.dgwClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.Name1,
+            this.SurName,
+            this.Phone,
+            this.DocumentType,
+            this.DocumentNumber});
+            this.dgwClientes.Location = new System.Drawing.Point(41, 240);
+            this.dgwClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.dgwClientes.Name = "dgwClientes";
+            this.dgwClientes.RowTemplate.Height = 24;
+            this.dgwClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgwClientes.Size = new System.Drawing.Size(547, 196);
+            this.dgwClientes.TabIndex = 8;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            // 
+            // Name1
+            // 
+            this.Name1.DataPropertyName = "Name";
+            this.Name1.HeaderText = "Nombre";
+            this.Name1.Name = "Name1";
+            // 
+            // SurName
+            // 
+            this.SurName.DataPropertyName = "SurName";
+            this.SurName.HeaderText = "Apellido";
+            this.SurName.Name = "SurName";
+            // 
+            // Phone
+            // 
+            this.Phone.DataPropertyName = "Phone";
+            this.Phone.HeaderText = "Celular";
+            this.Phone.Name = "Phone";
+            // 
+            // DocumentType
+            // 
+            this.DocumentType.DataPropertyName = "DocumentType";
+            this.DocumentType.HeaderText = "Tipo Doc";
+            this.DocumentType.Name = "DocumentType";
+            // 
+            // DocumentNumber
+            // 
+            this.DocumentNumber.DataPropertyName = "DocumentNumber";
+            this.DocumentNumber.HeaderText = "N° Documento";
+            this.DocumentNumber.Name = "DocumentNumber";
             // 
             // RegisterCustomer
             // 
@@ -235,15 +252,15 @@
             this.ClientSize = new System.Drawing.Size(607, 519);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonCancel);
-            this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.textBoxCelular);
+            this.Controls.Add(this.dgwClientes);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxDocumentType);
-            this.Controls.Add(this.textBoxDocumentNumber);
-            this.Controls.Add(this.textBoxSurName);
-            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.cbDocumentType);
+            this.Controls.Add(this.txtDocumentNumber);
+            this.Controls.Add(this.txtSurName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -251,7 +268,8 @@
             this.Controls.Add(this.label1);
             this.Name = "RegisterCustomer";
             this.Text = "RegisterCustomer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.RegisterCustomer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,21 +282,22 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.TextBox textBoxSurName;
-        private System.Windows.Forms.TextBox textBoxDocumentNumber;
-        private System.Windows.Forms.ComboBox comboBoxDocumentType;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSurName;
+        private System.Windows.Forms.TextBox txtDocumentNumber;
+        private System.Windows.Forms.ComboBox cbDocumentType;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxCelular;
-        private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TipoDocumento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Celular;
+        private System.Windows.Forms.TextBox txtMobile;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgwClientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SurName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DocumentType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DocumentNumber;
     }
 }

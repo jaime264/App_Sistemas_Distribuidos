@@ -9,6 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesTestHotel", "Servic
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewHotel", "ViewHotel\ViewHotel.csproj", "{AC66037C-D31F-4086-B56F-4784B3202E7E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0225E8BF-C998-4674-B9E7-4AC96F0D05DA} = {0225E8BF-C998-4674-B9E7-4AC96F0D05DA}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHotel", "ServiceHotel\ServiceHotel.csproj", "{0225E8BF-C998-4674-B9E7-4AC96F0D05DA}"
 EndProject

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServicesTestHotel.ServiceCustomer {
+namespace ViewHotel.ServiceCustomer {
     using System.Runtime.Serialization;
     using System;
     
@@ -35,7 +35,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         private int PhoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ServicesTestHotel.ServiceCustomer.Reservation[] ReservationField;
+        private ViewHotel.ServiceCustomer.Reservation[] ReservationField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SurNameField;
@@ -106,7 +106,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServicesTestHotel.ServiceCustomer.Reservation[] Reservation {
+        public ViewHotel.ServiceCustomer.Reservation[] Reservation {
             get {
                 return this.ReservationField;
             }
@@ -167,7 +167,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         private System.DateTime AdmissionDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ServicesTestHotel.ServiceCustomer.Customer CustomerField;
+        private ViewHotel.ServiceCustomer.Customer CustomerField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CustomerIdField;
@@ -176,13 +176,13 @@ namespace ServicesTestHotel.ServiceCustomer {
         private System.Nullable<System.DateTime> DepartureDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ServicesTestHotel.ServiceCustomer.Hotel HotelField;
+        private ViewHotel.ServiceCustomer.Hotel HotelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int HotelIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ServicesTestHotel.ServiceCustomer.Room RoomField;
+        private ViewHotel.ServiceCustomer.Room RoomField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int RoomIdField;
@@ -214,7 +214,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServicesTestHotel.ServiceCustomer.Customer Customer {
+        public ViewHotel.ServiceCustomer.Customer Customer {
             get {
                 return this.CustomerField;
             }
@@ -253,7 +253,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServicesTestHotel.ServiceCustomer.Hotel Hotel {
+        public ViewHotel.ServiceCustomer.Hotel Hotel {
             get {
                 return this.HotelField;
             }
@@ -279,7 +279,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServicesTestHotel.ServiceCustomer.Room Room {
+        public ViewHotel.ServiceCustomer.Room Room {
             get {
                 return this.RoomField;
             }
@@ -346,7 +346,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         private int QuantityRoomField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ServicesTestHotel.ServiceCustomer.Reservation[] ReservationField;
+        private ViewHotel.ServiceCustomer.Reservation[] ReservationField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idField;
@@ -404,7 +404,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServicesTestHotel.ServiceCustomer.Reservation[] Reservation {
+        public ViewHotel.ServiceCustomer.Reservation[] Reservation {
             get {
                 return this.ReservationField;
             }
@@ -468,7 +468,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         private double PriceField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ServicesTestHotel.ServiceCustomer.Reservation[] ReservationField;
+        private ViewHotel.ServiceCustomer.Reservation[] ReservationField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TypeRoomField;
@@ -513,7 +513,7 @@ namespace ServicesTestHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServicesTestHotel.ServiceCustomer.Reservation[] Reservation {
+        public ViewHotel.ServiceCustomer.Reservation[] Reservation {
             get {
                 return this.ReservationField;
             }
@@ -752,16 +752,22 @@ namespace ServicesTestHotel.ServiceCustomer {
     public interface IServiceCustomer {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/ListCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/ListCustomerResponse")]
-        ServicesTestHotel.ServiceCustomer.Customer[] ListCustomer();
+        ViewHotel.ServiceCustomer.Customer[] ListCustomer();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/ListCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/ListCustomerResponse")]
-        System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Customer[]> ListCustomerAsync();
+        System.Threading.Tasks.Task<ViewHotel.ServiceCustomer.Customer[]> ListCustomerAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/CreateCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/CreateCustomerResponse")]
-        ServicesTestHotel.ServiceCustomer.Confirm CreateCustomer(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE);
+        ViewHotel.ServiceCustomer.Confirm CreateCustomer(ViewHotel.ServiceCustomer.CustomerBE customerBE);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/CreateCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/CreateCustomerResponse")]
-        System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Confirm> CreateCustomerAsync(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE);
+        System.Threading.Tasks.Task<ViewHotel.ServiceCustomer.Confirm> CreateCustomerAsync(ViewHotel.ServiceCustomer.CustomerBE customerBE);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/UpdateCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/UpdateCustomerResponse")]
+        ViewHotel.ServiceCustomer.Confirm UpdateCustomer(ViewHotel.ServiceCustomer.Customer customer);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/UpdateCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/UpdateCustomerResponse")]
+        System.Threading.Tasks.Task<ViewHotel.ServiceCustomer.Confirm> UpdateCustomerAsync(ViewHotel.ServiceCustomer.Customer customer);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCustomer/DeleteCustomer", ReplyAction="http://tempuri.org/IServiceCustomer/DeleteCustomerResponse")]
         void DeleteCustomer(int customerId);
@@ -771,12 +777,12 @@ namespace ServicesTestHotel.ServiceCustomer {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceCustomerChannel : ServicesTestHotel.ServiceCustomer.IServiceCustomer, System.ServiceModel.IClientChannel {
+    public interface IServiceCustomerChannel : ViewHotel.ServiceCustomer.IServiceCustomer, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceCustomerClient : System.ServiceModel.ClientBase<ServicesTestHotel.ServiceCustomer.IServiceCustomer>, ServicesTestHotel.ServiceCustomer.IServiceCustomer {
+    public partial class ServiceCustomerClient : System.ServiceModel.ClientBase<ViewHotel.ServiceCustomer.IServiceCustomer>, ViewHotel.ServiceCustomer.IServiceCustomer {
         
         public ServiceCustomerClient() {
         }
@@ -797,20 +803,28 @@ namespace ServicesTestHotel.ServiceCustomer {
                 base(binding, remoteAddress) {
         }
         
-        public ServicesTestHotel.ServiceCustomer.Customer[] ListCustomer() {
+        public ViewHotel.ServiceCustomer.Customer[] ListCustomer() {
             return base.Channel.ListCustomer();
         }
         
-        public System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Customer[]> ListCustomerAsync() {
+        public System.Threading.Tasks.Task<ViewHotel.ServiceCustomer.Customer[]> ListCustomerAsync() {
             return base.Channel.ListCustomerAsync();
         }
         
-        public ServicesTestHotel.ServiceCustomer.Confirm CreateCustomer(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE) {
+        public ViewHotel.ServiceCustomer.Confirm CreateCustomer(ViewHotel.ServiceCustomer.CustomerBE customerBE) {
             return base.Channel.CreateCustomer(customerBE);
         }
         
-        public System.Threading.Tasks.Task<ServicesTestHotel.ServiceCustomer.Confirm> CreateCustomerAsync(ServicesTestHotel.ServiceCustomer.CustomerBE customerBE) {
+        public System.Threading.Tasks.Task<ViewHotel.ServiceCustomer.Confirm> CreateCustomerAsync(ViewHotel.ServiceCustomer.CustomerBE customerBE) {
             return base.Channel.CreateCustomerAsync(customerBE);
+        }
+        
+        public ViewHotel.ServiceCustomer.Confirm UpdateCustomer(ViewHotel.ServiceCustomer.Customer customer) {
+            return base.Channel.UpdateCustomer(customer);
+        }
+        
+        public System.Threading.Tasks.Task<ViewHotel.ServiceCustomer.Confirm> UpdateCustomerAsync(ViewHotel.ServiceCustomer.Customer customer) {
+            return base.Channel.UpdateCustomerAsync(customer);
         }
         
         public void DeleteCustomer(int customerId) {

@@ -25,6 +25,7 @@ namespace ServiceHotel
                 customer.SurName = customerBE.SurName;
                 customer.DocumentType = customerBE.DocumentType;
                 customer.DocumentNumber = customerBE.DocumentNumber;
+                customer.Phone = customerBE.Phone;
 
                 hotel.Customer.Add(customer);
                 hotel.SaveChanges();
@@ -77,6 +78,38 @@ namespace ServiceHotel
             {
                 throw new Exception(e.Message);
             }
+        }
+
+        public Confirm UpdateCustomer(Customer customer)
+        {
+            Confirm confirm = new Confirm();
+            try
+            {
+                HotelEntities hotel = new HotelEntities();
+                Customer custome = new Customer();
+
+                var query = (from c in hotel.Customer where c.id == customer.id select c).FirstOrDefault();
+
+                query.Name = customer.Name;
+                query.SurName = customer.SurName;
+                query.DocumentType = customer.DocumentType;
+                query.DocumentNumber = customer.DocumentNumber;
+                query.Phone = customer.Phone;
+
+                hotel.SaveChanges();
+
+                confirm.Clase = "UpdateCustomer";
+                confirm.Status = "OK";
+
+            }
+            catch (Exception e)
+            {
+                confirm.Clase = "UpdateCustomer";
+                confirm.Status = e.Message;
+                //throw new Exception(e.Message);
+            }
+
+            return confirm;
         }
     }
 }
