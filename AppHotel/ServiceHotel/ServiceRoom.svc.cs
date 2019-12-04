@@ -88,6 +88,28 @@ namespace ServiceHotel
             }
         }
 
+        public List<Room> ListRoom(int HotelID)
+        {
+            try
+            {
+                HotelEntities hotel = new HotelEntities();
+
+                var data = (from r in hotel.Room
+                            join e in hotel.Reservation on r.id equals e.RoomId
+                            where e.HotelId == HotelID
+                            select r).ToList();
+
+                var query = hotel.Room.ToList().Except(data).ToList();
+
+                return query;
+
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public Confirm Update(Room room)
         {
             Confirm confirm = new Confirm();

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -49,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\ServiceCustomer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceHotel\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -90,6 +98,7 @@
     <Compile Include="UpdateRegister.Designer.cs">
       <DependentUpon>UpdateRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="util\Room.cs" />
     <EmbeddedResource Include="HotelMenu.resx">
       <DependentUpon>HotelMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,7 +139,20 @@
     <None Include="Connected Services\ServiceCustomer\ViewHotel.ServiceCustomer.Confirm.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceCustomer\ViewHotel.ServiceCustomer.Customer.datasource">
+    <None Include="Connected Services\ServiceCustomer\ViewHotel.ServiceCustomer.CustomerBE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceHotel\ServiceHotel.wsdl" />
+    <None Include="Connected Services\ServiceHotel\ServiceHotel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceHotel\ServiceHotel1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceHotel\ServiceHotel2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceHotel\ViewHotel.ServiceHotel.Hotel.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReservation\ServiceReservation.wsdl" />
@@ -152,6 +174,7 @@
     <None Include="Connected Services\ServiceReservation\ViewHotel.ServiceReservation.Reservation.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -170,6 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceCustomer\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceHotel\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReservation\" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +222,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceCustomer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceHotel\ServiceHotel.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceHotel\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceHotel\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceHotel\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

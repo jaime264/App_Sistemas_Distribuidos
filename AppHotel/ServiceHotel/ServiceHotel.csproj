@@ -80,6 +80,7 @@
       <LastGenOutput>ModelHotel.cs</LastGenOutput>
     </Content>
     <Content Include="ServiceCustomer.svc" />
+    <Content Include="ServiceHotel.svc" />
     <Content Include="ServiceReservation.svc" />
     <Content Include="ServiceRoom.svc" />
     <Content Include="Web.config" />
@@ -92,6 +93,7 @@
       <DependentUpon>ModelHotel.tt</DependentUpon>
     </Compile>
     <Compile Include="IServiceCustomer.cs" />
+    <Compile Include="IServiceHotel.cs" />
     <Compile Include="IServiceReservation.cs" />
     <Compile Include="IServiceRoom.cs" />
     <Compile Include="ModelHotel.Context.cs">
@@ -118,6 +120,9 @@
     </Compile>
     <Compile Include="ServiceCustomer.svc.cs">
       <DependentUpon>ServiceCustomer.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceHotel.svc.cs">
+      <DependentUpon>ServiceHotel.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceReservation.svc.cs">
       <DependentUpon>ServiceReservation.svc</DependentUpon>

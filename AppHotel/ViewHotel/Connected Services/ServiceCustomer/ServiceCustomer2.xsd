@@ -10,7 +10,7 @@
   <xs:element name="ListCustomerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceHotel" minOccurs="0" name="ListCustomerResult" nillable="true" type="q1:ArrayOfCustomer" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceHotel" minOccurs="0" name="ListCustomerResult" nillable="true" type="q1:ArrayOfCustomerBE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

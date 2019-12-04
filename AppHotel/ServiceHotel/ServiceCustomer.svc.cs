@@ -64,13 +64,22 @@ namespace ServiceHotel
             }
         }
 
-        public List<Customer> ListCustomer()
+        public List<CustomerBE> ListCustomer()
         {
             HotelEntities hotelEntities = new HotelEntities();
 
             try
             {
-                var data = hotelEntities.Customer.ToList();
+                //var data = hotelEntities.Customer.ToList();
+                var data = (from c in hotelEntities.Customer select new CustomerBE {
+                    Id = c.id,
+                    Name = c.Name,
+                    SurName = c.SurName,
+                    DocumentType = c.DocumentType,
+                    DocumentNumber = c.DocumentNumber,
+                    Phone = c.Phone,
+                    FullName = c.Name + " " + c.SurName,
+                }).ToList();
 
                 return data;
             }

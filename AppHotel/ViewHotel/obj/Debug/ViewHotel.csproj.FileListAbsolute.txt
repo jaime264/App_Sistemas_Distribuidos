@@ -10,6 +10,12 @@ C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHote
 C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.GenerateResource.Cache
 C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.exe
 C:\Users\Jaime\Documents\Sistemas_Distribuidos\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe.config
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\Newtonsoft.Json.dll
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\Newtonsoft.Json.xml
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csprojAssemblyReference.cache
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.FormHotelCase.resources
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Login.resources
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Properties.Resources.resources
@@ -18,9 +24,6 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.Reserva
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.UpdateRegister.resources
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.GenerateResource.cache
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.CoreCompileInputs.cache
-C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe.config
-C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.exe
-C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\bin\Debug\ViewHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.CopyComplete
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.exe
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.pdb
-C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csprojAssemblyReference.cache

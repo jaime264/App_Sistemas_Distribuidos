@@ -13,7 +13,7 @@ namespace ServiceHotel
     public interface IServiceCustomer
     {
         [OperationContract]
-        List<Customer> ListCustomer();
+        List<CustomerBE> ListCustomer();
 
         [OperationContract]
         Confirm CreateCustomer(CustomerBE customerBE);
@@ -30,7 +30,7 @@ namespace ServiceHotel
     public class CustomerBE
     {
         [DataMember]
-        public int CustomerId { get; set; }
+        public int Id { get; set; }
 
         [DataMember]
         public String Name { get; set; }
@@ -46,6 +46,9 @@ namespace ServiceHotel
 
         [DataMember]
         public int Phone { get; set; }
+
+        [DataMember]
+        public String FullName { get; set; }
 
     }
 }

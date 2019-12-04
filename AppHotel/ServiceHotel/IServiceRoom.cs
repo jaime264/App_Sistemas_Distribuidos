@@ -32,6 +32,10 @@ namespace ServiceHotel
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
         List<Room> Find(string type);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
+        List<Room> ListRoom(int HotelID);
     }
 
     [DataContract]
