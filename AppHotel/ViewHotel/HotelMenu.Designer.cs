@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.inisiarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +39,6 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inisiarSesionToolStripMenuItem,
             this.clienteToolStripMenuItem,
             this.reservasToolStripMenuItem,
             this.salirToolStripMenuItem});
@@ -50,13 +48,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(446, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // inisiarSesionToolStripMenuItem
-            // 
-            this.inisiarSesionToolStripMenuItem.Name = "inisiarSesionToolStripMenuItem";
-            this.inisiarSesionToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.inisiarSesionToolStripMenuItem.Text = "Inisiar Sesion";
-            this.inisiarSesionToolStripMenuItem.Click += new System.EventHandler(this.inisiarSesionToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
@@ -101,7 +92,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem inisiarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;

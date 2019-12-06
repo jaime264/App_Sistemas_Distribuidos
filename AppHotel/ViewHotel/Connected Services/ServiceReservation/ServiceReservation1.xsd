@@ -25,7 +25,7 @@
   <xs:element name="ListReservationResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceHotel" minOccurs="0" name="ListReservationResult" nillable="true" type="q3:ArrayOfReservation" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceHotel" minOccurs="0" name="ListReservationResult" nillable="true" type="q3:ArrayOfReservationBE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

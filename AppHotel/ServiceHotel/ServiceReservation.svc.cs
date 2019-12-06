@@ -29,6 +29,9 @@ namespace ServiceHotel
                 hotel.Reservation.Add(reservation);
                 hotel.SaveChanges();
 
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.Send(reservationBE);
+
                 confirm.Clase = "CreateReservation";
                 confirm.Status = "OK";
 
@@ -71,13 +74,32 @@ namespace ServiceHotel
             return confirm;
         }
 
-        public List<Reservation> ListReservation()
+        public List<ReservationBE> ListReservation()
         {
             try
             {
                 HotelEntities hotel = new HotelEntities();
 
-                var data = hotel.Reservation.ToList();
+                //var data = hotel.Reservation.ToList();
+
+                var data = (from r in hotel.Reservation
+                            join c in hotel.Customer on r.CustomerId equals c.id
+                            join u in hotel.Room on r.RoomId equals u.id
+                            join h in hotel.Hotel on r.HotelId equals h.id
+                            orderby r.id descending
+                            select new ReservationBE
+                            {
+                                Id = r.id,
+                                CustomerId = r.CustomerId,
+                                CustomerName = c.Name + " " + c.SurName,
+                                HotelId = r.HotelId,
+                                HotelName = h.Name,
+                                RoomId = u.id,
+                                RoomName = u.TypeRoom,
+                                AdmissionDate = r.AdmissionDate,
+                                DepartureDate = r.DepartureDate,
+
+                            }).ToList();
 
                 return data;
             }

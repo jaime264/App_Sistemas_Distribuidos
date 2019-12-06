@@ -26,11 +26,19 @@ namespace ViewHotel.ServiceReservation {
         
         private int customerIdField;
         
-        private System.DateTime departureDateField;
+        private string customerNameField;
+        
+        private System.Nullable<System.DateTime> departureDateField;
         
         private int hotelIdField;
         
+        private string hotelNameField;
+        
+        private int idField;
+        
         private int roomIdField;
+        
+        private string roomNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -69,7 +77,20 @@ namespace ViewHotel.ServiceReservation {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.DateTime departureDate {
+        public string customerName {
+            get {
+                return this.customerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.customerNameField, value) != true)) {
+                    this.customerNameField = value;
+                    this.RaisePropertyChanged("customerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.DateTime> departureDate {
             get {
                 return this.departureDateField;
             }
@@ -95,6 +116,32 @@ namespace ViewHotel.ServiceReservation {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string hotelName {
+            get {
+                return this.hotelNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.hotelNameField, value) != true)) {
+                    this.hotelNameField = value;
+                    this.RaisePropertyChanged("hotelName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((this.idField.Equals(value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
         public int roomId {
             get {
                 return this.roomIdField;
@@ -103,6 +150,19 @@ namespace ViewHotel.ServiceReservation {
                 if ((this.roomIdField.Equals(value) != true)) {
                     this.roomIdField = value;
                     this.RaisePropertyChanged("roomId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string roomName {
+            get {
+                return this.roomNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.roomNameField, value) != true)) {
+                    this.roomNameField = value;
+                    this.RaisePropertyChanged("roomName");
                 }
             }
         }
@@ -178,554 +238,6 @@ namespace ViewHotel.ServiceReservation {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Reservation", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
-    [System.SerializableAttribute()]
-    public partial class Reservation : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime AdmissionDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ViewHotel.ServiceReservation.Customer CustomerField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CustomerIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> DepartureDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ViewHotel.ServiceReservation.Hotel HotelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int HotelIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ViewHotel.ServiceReservation.Room RoomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int RoomIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime AdmissionDate {
-            get {
-                return this.AdmissionDateField;
-            }
-            set {
-                if ((this.AdmissionDateField.Equals(value) != true)) {
-                    this.AdmissionDateField = value;
-                    this.RaisePropertyChanged("AdmissionDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ViewHotel.ServiceReservation.Customer Customer {
-            get {
-                return this.CustomerField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomerField, value) != true)) {
-                    this.CustomerField = value;
-                    this.RaisePropertyChanged("Customer");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CustomerId {
-            get {
-                return this.CustomerIdField;
-            }
-            set {
-                if ((this.CustomerIdField.Equals(value) != true)) {
-                    this.CustomerIdField = value;
-                    this.RaisePropertyChanged("CustomerId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> DepartureDate {
-            get {
-                return this.DepartureDateField;
-            }
-            set {
-                if ((this.DepartureDateField.Equals(value) != true)) {
-                    this.DepartureDateField = value;
-                    this.RaisePropertyChanged("DepartureDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ViewHotel.ServiceReservation.Hotel Hotel {
-            get {
-                return this.HotelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HotelField, value) != true)) {
-                    this.HotelField = value;
-                    this.RaisePropertyChanged("Hotel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int HotelId {
-            get {
-                return this.HotelIdField;
-            }
-            set {
-                if ((this.HotelIdField.Equals(value) != true)) {
-                    this.HotelIdField = value;
-                    this.RaisePropertyChanged("HotelId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ViewHotel.ServiceReservation.Room Room {
-            get {
-                return this.RoomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RoomField, value) != true)) {
-                    this.RoomField = value;
-                    this.RaisePropertyChanged("Room");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int RoomId {
-            get {
-                return this.RoomIdField;
-            }
-            set {
-                if ((this.RoomIdField.Equals(value) != true)) {
-                    this.RoomIdField = value;
-                    this.RaisePropertyChanged("RoomId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
-    [System.SerializableAttribute()]
-    public partial class Customer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DocumentNumberField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DocumentTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int PhoneField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ViewHotel.ServiceReservation.Reservation[] ReservationField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SurNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DocumentNumber {
-            get {
-                return this.DocumentNumberField;
-            }
-            set {
-                if ((this.DocumentNumberField.Equals(value) != true)) {
-                    this.DocumentNumberField = value;
-                    this.RaisePropertyChanged("DocumentNumber");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DocumentType {
-            get {
-                return this.DocumentTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DocumentTypeField, value) != true)) {
-                    this.DocumentTypeField = value;
-                    this.RaisePropertyChanged("DocumentType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Phone {
-            get {
-                return this.PhoneField;
-            }
-            set {
-                if ((this.PhoneField.Equals(value) != true)) {
-                    this.PhoneField = value;
-                    this.RaisePropertyChanged("Phone");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ViewHotel.ServiceReservation.Reservation[] Reservation {
-            get {
-                return this.ReservationField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReservationField, value) != true)) {
-                    this.ReservationField = value;
-                    this.RaisePropertyChanged("Reservation");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string SurName {
-            get {
-                return this.SurNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SurNameField, value) != true)) {
-                    this.SurNameField = value;
-                    this.RaisePropertyChanged("SurName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Hotel", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
-    [System.SerializableAttribute()]
-    public partial class Hotel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DirectionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int QuantityRoomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ViewHotel.ServiceReservation.Reservation[] ReservationField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int phoneField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Direction {
-            get {
-                return this.DirectionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DirectionField, value) != true)) {
-                    this.DirectionField = value;
-                    this.RaisePropertyChanged("Direction");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int QuantityRoom {
-            get {
-                return this.QuantityRoomField;
-            }
-            set {
-                if ((this.QuantityRoomField.Equals(value) != true)) {
-                    this.QuantityRoomField = value;
-                    this.RaisePropertyChanged("QuantityRoom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ViewHotel.ServiceReservation.Reservation[] Reservation {
-            get {
-                return this.ReservationField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReservationField, value) != true)) {
-                    this.ReservationField = value;
-                    this.RaisePropertyChanged("Reservation");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                if ((this.phoneField.Equals(value) != true)) {
-                    this.phoneField = value;
-                    this.RaisePropertyChanged("phone");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Room", Namespace="http://schemas.datacontract.org/2004/07/ServiceHotel")]
-    [System.SerializableAttribute()]
-    public partial class Room : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NumberRoomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double PriceField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ViewHotel.ServiceReservation.Reservation[] ReservationField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TypeRoomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string NumberRoom {
-            get {
-                return this.NumberRoomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NumberRoomField, value) != true)) {
-                    this.NumberRoomField = value;
-                    this.RaisePropertyChanged("NumberRoom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public double Price {
-            get {
-                return this.PriceField;
-            }
-            set {
-                if ((this.PriceField.Equals(value) != true)) {
-                    this.PriceField = value;
-                    this.RaisePropertyChanged("Price");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ViewHotel.ServiceReservation.Reservation[] Reservation {
-            get {
-                return this.ReservationField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReservationField, value) != true)) {
-                    this.ReservationField = value;
-                    this.RaisePropertyChanged("Reservation");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string TypeRoom {
-            get {
-                return this.TypeRoomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeRoomField, value) != true)) {
-                    this.TypeRoomField = value;
-                    this.RaisePropertyChanged("TypeRoom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReservation.IServiceReservation")]
     public interface IServiceReservation {
@@ -737,10 +249,10 @@ namespace ViewHotel.ServiceReservation {
         System.Threading.Tasks.Task<ViewHotel.ServiceReservation.Confirm> UpdateReservationAsync(ViewHotel.ServiceReservation.ReservationBE reservationBE, int reservationId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceReservation/ListReservation", ReplyAction="http://tempuri.org/IServiceReservation/ListReservationResponse")]
-        ViewHotel.ServiceReservation.Reservation[] ListReservation();
+        ViewHotel.ServiceReservation.ReservationBE[] ListReservation();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceReservation/ListReservation", ReplyAction="http://tempuri.org/IServiceReservation/ListReservationResponse")]
-        System.Threading.Tasks.Task<ViewHotel.ServiceReservation.Reservation[]> ListReservationAsync();
+        System.Threading.Tasks.Task<ViewHotel.ServiceReservation.ReservationBE[]> ListReservationAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceReservation/CreateReservation", ReplyAction="http://tempuri.org/IServiceReservation/CreateReservationResponse")]
         ViewHotel.ServiceReservation.Confirm CreateReservation(ViewHotel.ServiceReservation.ReservationBE reservationBE);
@@ -790,11 +302,11 @@ namespace ViewHotel.ServiceReservation {
             return base.Channel.UpdateReservationAsync(reservationBE, reservationId);
         }
         
-        public ViewHotel.ServiceReservation.Reservation[] ListReservation() {
+        public ViewHotel.ServiceReservation.ReservationBE[] ListReservation() {
             return base.Channel.ListReservation();
         }
         
-        public System.Threading.Tasks.Task<ViewHotel.ServiceReservation.Reservation[]> ListReservationAsync() {
+        public System.Threading.Tasks.Task<ViewHotel.ServiceReservation.ReservationBE[]> ListReservationAsync() {
             return base.Channel.ListReservationAsync();
         }
         

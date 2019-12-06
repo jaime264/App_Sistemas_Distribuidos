@@ -12,6 +12,7 @@ namespace ServiceHotel
     // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione ServiceRoom.svc o ServiceRoom.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class ServiceRoom : IServiceRoom
     {
+        
         public Confirm Create(Room room)
         {
             Confirm confirm = new Confirm();
@@ -88,7 +89,7 @@ namespace ServiceHotel
             }
         }
 
-        public List<Room> ListRoom(int HotelID)
+        public List<Room> ListRoom(int HotelID, int CustomerID)
         {
             try
             {
@@ -96,7 +97,7 @@ namespace ServiceHotel
 
                 var data = (from r in hotel.Room
                             join e in hotel.Reservation on r.id equals e.RoomId
-                            where e.HotelId == HotelID
+                            where e.HotelId == HotelID && e.CustomerId == CustomerID
                             select r).ToList();
 
                 var query = hotel.Room.ToList().Except(data).ToList();

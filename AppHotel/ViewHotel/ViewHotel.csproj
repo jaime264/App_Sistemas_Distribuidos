@@ -98,6 +98,12 @@
     <Compile Include="UpdateRegister.Designer.cs">
       <DependentUpon>UpdateRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateReservation.Designer.cs">
+      <DependentUpon>UpdateReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="util\Room.cs" />
     <EmbeddedResource Include="HotelMenu.resx">
       <DependentUpon>HotelMenu.cs</DependentUpon>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateRegister.resx">
       <DependentUpon>UpdateRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateReservation.resx">
+      <DependentUpon>UpdateReservation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\ServiceCustomer\ServiceCustomer.wsdl" />
     <None Include="Connected Services\ServiceCustomer\ServiceCustomer.xsd">
@@ -171,7 +180,7 @@
     <None Include="Connected Services\ServiceReservation\ViewHotel.ServiceReservation.Confirm.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReservation\ViewHotel.ServiceReservation.Reservation.datasource">
+    <None Include="Connected Services\ServiceReservation\ViewHotel.ServiceReservation.ReservationBE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />

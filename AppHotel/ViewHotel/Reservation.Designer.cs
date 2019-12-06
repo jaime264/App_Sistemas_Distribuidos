@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtg = new System.Windows.Forms.DataGridView();
+            this.dtgReservas = new System.Windows.Forms.DataGridView();
+            this.customerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hotelName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.admissionDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departureDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hotelId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblReservas = new System.Windows.Forms.Label();
@@ -40,20 +48,80 @@
             this.cboCliente = new System.Windows.Forms.ComboBox();
             this.cboHabitacion = new System.Windows.Forms.ComboBox();
             this.cboHotel = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
+            this.dtpSalida = new System.Windows.Forms.DateTimePicker();
             this.btnReservar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgReservas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtg
+            // dtgReservas
             // 
-            this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg.Location = new System.Drawing.Point(45, 262);
-            this.dtg.Name = "dtg";
-            this.dtg.Size = new System.Drawing.Size(552, 163);
-            this.dtg.TabIndex = 24;
+            this.dtgReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgReservas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.customerName,
+            this.hotelName,
+            this.roomName,
+            this.admissionDate,
+            this.departureDate,
+            this.customerId,
+            this.hotelId,
+            this.roomId});
+            this.dtgReservas.Location = new System.Drawing.Point(45, 262);
+            this.dtgReservas.Name = "dtgReservas";
+            this.dtgReservas.Size = new System.Drawing.Size(552, 163);
+            this.dtgReservas.TabIndex = 24;
+            // 
+            // customerName
+            // 
+            this.customerName.DataPropertyName = "customerName";
+            this.customerName.HeaderText = "Nombre";
+            this.customerName.Name = "customerName";
+            // 
+            // hotelName
+            // 
+            this.hotelName.DataPropertyName = "hotelName";
+            this.hotelName.HeaderText = "Hotel";
+            this.hotelName.Name = "hotelName";
+            // 
+            // roomName
+            // 
+            this.roomName.DataPropertyName = "roomName";
+            this.roomName.HeaderText = "Tipo Habitación";
+            this.roomName.Name = "roomName";
+            // 
+            // admissionDate
+            // 
+            this.admissionDate.DataPropertyName = "admissionDate";
+            this.admissionDate.HeaderText = "Ingreso";
+            this.admissionDate.Name = "admissionDate";
+            // 
+            // departureDate
+            // 
+            this.departureDate.DataPropertyName = "departureDate";
+            this.departureDate.HeaderText = "Salida";
+            this.departureDate.Name = "departureDate";
+            // 
+            // customerId
+            // 
+            this.customerId.DataPropertyName = "customerId";
+            this.customerId.HeaderText = "customerId";
+            this.customerId.Name = "customerId";
+            this.customerId.Visible = false;
+            // 
+            // hotelId
+            // 
+            this.hotelId.DataPropertyName = "hotelId";
+            this.hotelId.HeaderText = "hotelId";
+            this.hotelId.Name = "hotelId";
+            this.hotelId.Visible = false;
+            // 
+            // roomId
+            // 
+            this.roomId.DataPropertyName = "roomId";
+            this.roomId.HeaderText = "roomId";
+            this.roomId.Name = "roomId";
+            this.roomId.Visible = false;
             // 
             // btnModificar
             // 
@@ -63,6 +131,7 @@
             this.btnModificar.TabIndex = 25;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -72,6 +141,7 @@
             this.btnEliminar.TabIndex = 25;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblReservas
             // 
@@ -148,24 +218,27 @@
             // cboHotel
             // 
             this.cboHotel.FormattingEnabled = true;
-            this.cboHotel.Location = new System.Drawing.Point(168, 108);
+            this.cboHotel.Location = new System.Drawing.Point(168, 109);
             this.cboHotel.Name = "cboHotel";
             this.cboHotel.Size = new System.Drawing.Size(121, 21);
             this.cboHotel.TabIndex = 28;
             // 
-            // dateTimePicker1
+            // dtpIngreso
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(168, 175);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 29;
+            this.dtpIngreso.Location = new System.Drawing.Point(168, 175);
+            this.dtpIngreso.MinDate = new System.DateTime(2019, 11, 25, 0, 0, 0, 0);
+            this.dtpIngreso.Name = "dtpIngreso";
+            this.dtpIngreso.Size = new System.Drawing.Size(200, 20);
+            this.dtpIngreso.TabIndex = 29;
+            this.dtpIngreso.Value = new System.DateTime(2019, 12, 5, 11, 5, 16, 0);
             // 
-            // dateTimePicker2
+            // dtpSalida
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(168, 209);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 29;
+            this.dtpSalida.Location = new System.Drawing.Point(168, 209);
+            this.dtpSalida.MinDate = new System.DateTime(2019, 12, 5, 0, 0, 0, 0);
+            this.dtpSalida.Name = "dtpSalida";
+            this.dtpSalida.Size = new System.Drawing.Size(200, 20);
+            this.dtpSalida.TabIndex = 29;
             // 
             // btnReservar
             // 
@@ -185,6 +258,7 @@
             this.btnCancelar.TabIndex = 30;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Reservation
             // 
@@ -193,8 +267,8 @@
             this.ClientSize = new System.Drawing.Size(632, 537);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnReservar);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpSalida);
+            this.Controls.Add(this.dtpIngreso);
             this.Controls.Add(this.cboHotel);
             this.Controls.Add(this.cboHabitacion);
             this.Controls.Add(this.cboCliente);
@@ -206,19 +280,19 @@
             this.Controls.Add(this.lblReservas);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.dtg);
+            this.Controls.Add(this.dtgReservas);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Reservation";
             this.Text = "Reservation";
             this.Load += new System.EventHandler(this.Reservation_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgReservas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dtg;
+        private System.Windows.Forms.DataGridView dtgReservas;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblReservas;
@@ -230,9 +304,17 @@
         private System.Windows.Forms.ComboBox cboCliente;
         private System.Windows.Forms.ComboBox cboHabitacion;
         private System.Windows.Forms.ComboBox cboHotel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpIngreso;
+        private System.Windows.Forms.DateTimePicker dtpSalida;
         private System.Windows.Forms.Button btnReservar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hotelName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn admissionDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departureDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hotelId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomId;
     }
 }

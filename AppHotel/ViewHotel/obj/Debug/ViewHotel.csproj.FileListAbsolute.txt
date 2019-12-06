@@ -27,3 +27,4 @@ C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.csproj.CopyComplete
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.exe
 C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.pdb
+C:\Proy\App_Sistemas_Distribuidos\AppHotel\ViewHotel\obj\Debug\ViewHotel.UpdateReservation.resources

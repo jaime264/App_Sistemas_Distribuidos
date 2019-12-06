@@ -36,13 +36,6 @@ namespace ViewHotel
             reservation.Show();
         }
 
-        private void inisiarSesionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.MdiParent = this;
-            login.Show();
-        }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();

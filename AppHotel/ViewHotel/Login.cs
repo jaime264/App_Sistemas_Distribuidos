@@ -16,5 +16,21 @@ namespace ViewHotel
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string user = txtUser.Text;
+            string pass = txtPassword.Text;
+            if(user == "jaime" && pass == "1234"){
+                FormHotelCase formHotelCase = new FormHotelCase();
+                formHotelCase.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Ingresar Usuario y contraseña Correctos");
+            }
+            
+        }
     }
 }

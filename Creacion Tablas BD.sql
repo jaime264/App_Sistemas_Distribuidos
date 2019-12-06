@@ -9,10 +9,10 @@ CREATE TABLE Customer
 	Phone int NOT NULL)
 GO 
 
-CREATE TABLE Reservation  
+ALTER TABLE Reservation  
    (id int IDENTITY(1,1) PRIMARY KEY,
     AdmissionDate date NOT NULL,  
-    DepartureDate date,  
+    DepartureDate date NOT NULL,  
     CustomerId int NOT NULL,
 	RoomId int NOT NULL,
 	HotelId int NOT NULL,
@@ -20,6 +20,9 @@ CREATE TABLE Reservation
 	FOREIGN KEY (RoomId) REFERENCES Room(id),
 	FOREIGN KEY (HotelId) REFERENCES Hotel(id))
 GO 
+
+ALTER TABLE Reservation
+ALTER COLUMN DepartureDate date NOT NULL
 
 CREATE TABLE Hotel  
    (id int IDENTITY(1,1) PRIMARY KEY,

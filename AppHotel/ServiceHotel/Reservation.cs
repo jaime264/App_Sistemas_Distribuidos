@@ -16,7 +16,7 @@ namespace ServiceHotel
     {
         public int id { get; set; }
         public System.DateTime AdmissionDate { get; set; }
-        public Nullable<System.DateTime> DepartureDate { get; set; }
+        public System.DateTime DepartureDate { get; set; }
         public int CustomerId { get; set; }
         public int RoomId { get; set; }
         public int HotelId { get; set; }

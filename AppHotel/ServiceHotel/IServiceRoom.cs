@@ -35,7 +35,7 @@ namespace ServiceHotel
 
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
-        List<Room> ListRoom(int HotelID);
+        List<Room> ListRoom(int HotelID, int CustomerID);
     }
 
     [DataContract]

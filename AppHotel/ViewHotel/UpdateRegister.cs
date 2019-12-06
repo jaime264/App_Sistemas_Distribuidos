@@ -32,6 +32,7 @@ namespace ViewHotel
             client.DocumentNumber = Convert.ToInt32(txtDocumentNumber.Text);
             client.Phone = Convert.ToInt32(txtMobile.Text);
             serviceCustomer.UpdateCustomer(client);
+
             this.Close();
         }
 
@@ -42,7 +43,6 @@ namespace ViewHotel
 
         private void UpdateRegister_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show(customer.Name);
             txtName.Text = customer.Name;
             txtSurName.Text = customer.SurName;
             cbDocumentType.Text = customer.DocumentType;

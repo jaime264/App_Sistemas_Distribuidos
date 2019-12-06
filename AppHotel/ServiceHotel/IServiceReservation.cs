@@ -16,7 +16,7 @@ namespace ServiceHotel
         Confirm UpdateReservation(ReservationBE reservationBE, int reservationId);
 
         [OperationContract]
-        List<Reservation> ListReservation();
+        List<ReservationBE> ListReservation();
 
         [OperationContract]
         Confirm CreateReservation(ReservationBE reservationBE);
@@ -28,80 +28,41 @@ namespace ServiceHotel
     [Serializable]
     public class ReservationBE
     {
+        private int id;
         private DateTime admissionDate;
         private DateTime departureDate;
         private int customerId;
+        private String customerName;
         private int roomId;
+        private String roomName;
         private int hotelId;
+        private String hotelName;
 
         [DataMember]
-        public DateTime AdmissionDate
-        {
-            get
-            {
-                return admissionDate;
-            }
-
-            set
-            {
-                admissionDate = value;
-            }
-        }
+        public int Id { get => id; set => id = value; }
 
         [DataMember]
-        public DateTime DepartureDate
-        {
-            get
-            {
-                return departureDate;
-            }
-
-            set
-            {
-                departureDate = value;
-            }
-        }
+        public DateTime AdmissionDate { get => admissionDate; set => admissionDate = value; }
 
         [DataMember]
-        public int CustomerId
-        {
-            get
-            {
-                return customerId;
-            }
-
-            set
-            {
-                customerId = value;
-            }
-        }
+        public DateTime DepartureDate { get => departureDate; set => departureDate = value; }
 
         [DataMember]
-        public int RoomId
-        {
-            get
-            {
-                return roomId;
-            }
-
-            set
-            {
-                roomId = value;
-            }
-        }
+        public int CustomerId { get => customerId; set => customerId = value; }
 
         [DataMember]
-        public int HotelId
-        {
-            get
-            {
-                return hotelId;
-            }
+        public string CustomerName { get => customerName; set => customerName = value; }
 
-            set
-            {
-                hotelId = value;
-            }
-        }
+        [DataMember]
+        public int RoomId { get => roomId; set => roomId = value; }
+
+        [DataMember]
+        public string RoomName { get => roomName; set => roomName = value; }
+
+        [DataMember]
+        public int HotelId { get => hotelId; set => hotelId = value; }
+
+        [DataMember]
+        public String HotelName { get => hotelName; set => hotelName = value; }
     }
 }

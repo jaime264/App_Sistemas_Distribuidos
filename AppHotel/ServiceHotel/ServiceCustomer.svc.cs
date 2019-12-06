@@ -21,17 +21,30 @@ namespace ServiceHotel
                 HotelEntities hotel = new HotelEntities();
                 Customer customer = new Customer();
 
-                customer.Name = customerBE.Name;
-                customer.SurName = customerBE.SurName;
-                customer.DocumentType = customerBE.DocumentType;
-                customer.DocumentNumber = customerBE.DocumentNumber;
-                customer.Phone = customerBE.Phone;
+                var query = (from c in hotel.Customer where 
+                             c.DocumentType == customerBE.DocumentType &&
+                             c.DocumentNumber == customerBE.DocumentNumber select c).ToList();
 
-                hotel.Customer.Add(customer);
-                hotel.SaveChanges();
+                if(query.Count() > 0)
+                {
+                    customer.Name = customerBE.Name;
+                    customer.SurName = customerBE.SurName;
+                    customer.DocumentType = customerBE.DocumentType;
+                    customer.DocumentNumber = customerBE.DocumentNumber;
+                    customer.Phone = customerBE.Phone;
 
-                confirm.Clase = "CreateCustomer";
-                confirm.Status = "OK";
+                    hotel.Customer.Add(customer);
+                    hotel.SaveChanges();
+
+                    confirm.Clase = "CreateCustomer";
+                    confirm.Status = "OK";
+                }
+                else
+                {
+                    confirm.Clase = "CreateCustomer";
+                    confirm.Status = "Customer duplicate";
+                }
+                
             }
             catch (Exception e)
             {

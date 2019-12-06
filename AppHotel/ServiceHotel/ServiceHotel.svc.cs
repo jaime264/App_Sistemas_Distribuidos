@@ -15,7 +15,7 @@ namespace ServiceHotel
         {
             try
             {
-                HotelEntities hotel  = new HotelEntities();
+                HotelEntities hotel = new HotelEntities();
 
                 var data = hotel.Hotel.ToList();
 
