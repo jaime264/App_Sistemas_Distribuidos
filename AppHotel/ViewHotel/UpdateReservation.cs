@@ -68,7 +68,12 @@ namespace ViewHotel
             cboHabitacion.SelectedValue = reservation.roomId;
             cboHotel.SelectedValue = reservation.hotelId;
             dtpIngreso.Value = reservation.admissionDate.Date;
-            dtpSalida.Value = reservation.departureDate.Value.Date;
+            //dtpSalida.Value = reservation.departureDate.value
+        }
+
+        private void lblReservas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -69,6 +69,7 @@
             this.roomId});
             this.dtgReservas.Location = new System.Drawing.Point(45, 262);
             this.dtgReservas.Name = "dtgReservas";
+            this.dtgReservas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgReservas.Size = new System.Drawing.Size(552, 163);
             this.dtgReservas.TabIndex = 24;
             // 
@@ -149,9 +150,10 @@
             this.lblReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReservas.Location = new System.Drawing.Point(40, 27);
             this.lblReservas.Name = "lblReservas";
-            this.lblReservas.Size = new System.Drawing.Size(253, 29);
+            this.lblReservas.Size = new System.Drawing.Size(249, 29);
             this.lblReservas.TabIndex = 26;
-            this.lblReservas.Text = "Reservas Habitacion";
+            this.lblReservas.Text = "Reservar Habitacion";
+            this.lblReservas.Click += new System.EventHandler(this.lblReservas_Click);
             // 
             // lblCLiente
             // 

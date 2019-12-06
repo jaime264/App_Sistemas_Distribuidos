@@ -41,7 +41,7 @@
       <xs:element minOccurs="0" name="AdmissionDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Customer" nillable="true" type="tns:Customer" />
       <xs:element minOccurs="0" name="CustomerId" type="xs:int" />
-      <xs:element minOccurs="0" name="DepartureDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Hotel" nillable="true" type="tns:Hotel" />
       <xs:element minOccurs="0" name="HotelId" type="xs:int" />
       <xs:element minOccurs="0" name="Room" nillable="true" type="tns:Room" />

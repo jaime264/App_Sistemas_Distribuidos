@@ -20,13 +20,7 @@ namespace ServiceHotel
             {
                 HotelEntities hotel = new HotelEntities();
                 Customer customer = new Customer();
-
-                var query = (from c in hotel.Customer where 
-                             c.DocumentType == customerBE.DocumentType &&
-                             c.DocumentNumber == customerBE.DocumentNumber select c).ToList();
-
-                if(query.Count() > 0)
-                {
+              
                     customer.Name = customerBE.Name;
                     customer.SurName = customerBE.SurName;
                     customer.DocumentType = customerBE.DocumentType;
@@ -38,12 +32,7 @@ namespace ServiceHotel
 
                     confirm.Clase = "CreateCustomer";
                     confirm.Status = "OK";
-                }
-                else
-                {
-                    confirm.Clase = "CreateCustomer";
-                    confirm.Status = "Customer duplicate";
-                }
+
                 
             }
             catch (Exception e)

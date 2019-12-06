@@ -28,7 +28,7 @@ namespace ViewHotel.ServiceReservation {
         
         private string customerNameField;
         
-        private System.Nullable<System.DateTime> departureDateField;
+        private System.DateTime departureDateField;
         
         private int hotelIdField;
         
@@ -90,7 +90,7 @@ namespace ViewHotel.ServiceReservation {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<System.DateTime> departureDate {
+        public System.DateTime departureDate {
             get {
                 return this.departureDateField;
             }

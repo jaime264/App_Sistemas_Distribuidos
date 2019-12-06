@@ -375,7 +375,7 @@ namespace ViewHotel.ServiceCustomer {
         private int CustomerIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> DepartureDateField;
+        private System.DateTime DepartureDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ViewHotel.ServiceCustomer.Hotel HotelField;
@@ -442,7 +442,7 @@ namespace ViewHotel.ServiceCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> DepartureDate {
+        public System.DateTime DepartureDate {
             get {
                 return this.DepartureDateField;
             }

@@ -153,9 +153,10 @@
             this.lblReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReservas.Location = new System.Drawing.Point(45, 31);
             this.lblReservas.Name = "lblReservas";
-            this.lblReservas.Size = new System.Drawing.Size(253, 29);
+            this.lblReservas.Size = new System.Drawing.Size(237, 29);
             this.lblReservas.TabIndex = 43;
-            this.lblReservas.Text = "Reservas Habitacion";
+            this.lblReservas.Text = "Actualiar Reservas ";
+            this.lblReservas.Click += new System.EventHandler(this.lblReservas_Click);
             // 
             // UpdateReservation
             // 

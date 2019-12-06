@@ -171,5 +171,10 @@ namespace ViewHotel
             }
 
         }
+
+        private void lblReservas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
